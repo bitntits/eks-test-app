@@ -1,5 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
+namespace: eks-test
 metadata:
   labels:
     app: springboot-app
@@ -15,8 +16,8 @@ spec:
         app: springboot-app
     spec:
       containers:
-      - name: my-springboot-app
-        image: 211223789150.dkr.ecr.us-east-1.amazonaws.com/my-springboot-app:latest
+      - name: eks-springboot-app
+        image: 065241720470.dkr.ecr.ap-south-1.amazonaws.com/eks:1.0.0
         imagePullPolicy: Always
         ports:
         - containerPort: 8085
