@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
-namespace: eks-test
 metadata:
+  namespace: eks-test
   labels:
     app: springboot-app
   name: springboot-app
