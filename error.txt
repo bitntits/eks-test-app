@@ -1,0 +1,87 @@
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/asgiref/sync.py", line 534, in thread_handler	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	raise exc_info[1]	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 42, in inner	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	response = await get_response(request)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 253, in _get_response_async	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	response = await wrapped_callback(	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/asgiref/sync.py", line 479, in __call__	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	ret: _R = await loop.run_in_executor(	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/asgiref/current_thread_executor.py", line 40, in run	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	result = self.fn(*self.args, **self.kwargs)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/asgiref/sync.py", line 538, in thread_handler	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	return func(*args, **kwargs)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	return view_func(*args, **kwargs)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	return self.dispatch(request, *args, **kwargs)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	response = self.handle_exception(exc)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	self.raise_uncaught_exception(exc)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	raise exc	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 497, in dispatch	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	self.initial(request, *args, **kwargs)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 414, in initial	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	self.perform_authentication(request)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 324, in perform_authentication	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	request.user	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/rest_framework/request.py", line 227, in user	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	self._authenticate()	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/rest_framework/request.py", line 380, in _authenticate	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	user_auth_tuple = authenticator.authenticate(self)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/home/ubuntu/cogncise/crm_backend/./crm_backend/apps/service_worker/utils.py", line 49, in authenticate	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	data = jwt.decode(raw_jwt, settings.SIMPLE_JWT['SIGNING_KEY'], algorithms=[settings.SIMPLE_JWT['ALGORITHM']])	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/jwt/api_jwt.py", line 168, in decode	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	decoded = self.decode_complete(	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/jwt/api_jwt.py", line 136, in decode_complete	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	self._validate_claims(	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/jwt/api_jwt.py", line 199, in _validate_claims	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	self._validate_exp(payload, now, leeway)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/jwt/api_jwt.py", line 234, in _validate_exp	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	raise ExpiredSignatureError("Signature has expired")	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	jwt.exceptions.ExpiredSignatureError: Signature has expired	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	2023-08-17 09:51:08,867 ERROR Internal Server Error: /api/v1/service-worker/me/	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	Traceback (most recent call last):	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/asgiref/sync.py", line 534, in thread_handler	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	raise exc_info[1]	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 42, in inner	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	response = await get_response(request)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 253, in _get_response_async	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	response = await wrapped_callback(	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/asgiref/sync.py", line 479, in __call__	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	ret: _R = await loop.run_in_executor(	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/asgiref/current_thread_executor.py", line 40, in run	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	result = self.fn(*self.args, **self.kwargs)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/asgiref/sync.py", line 538, in thread_handler	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	return func(*args, **kwargs)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	return view_func(*args, **kwargs)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	return self.dispatch(request, *args, **kwargs)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	response = self.handle_exception(exc)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	self.raise_uncaught_exception(exc)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	raise exc	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 497, in dispatch	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	self.initial(request, *args, **kwargs)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 414, in initial	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	self.perform_authentication(request)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/rest_framework/views.py", line 324, in perform_authentication	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	request.user	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/rest_framework/request.py", line 227, in user	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	self._authenticate()	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/rest_framework/request.py", line 380, in _authenticate	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	user_auth_tuple = authenticator.authenticate(self)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/home/ubuntu/cogncise/crm_backend/./crm_backend/apps/service_worker/utils.py", line 49, in authenticate	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	data = jwt.decode(raw_jwt, settings.SIMPLE_JWT['SIGNING_KEY'], algorithms=[settings.SIMPLE_JWT['ALGORITHM']])	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/jwt/api_jwt.py", line 168, in decode	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	decoded = self.decode_complete(	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/jwt/api_jwt.py", line 136, in decode_complete	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	self._validate_claims(	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/jwt/api_jwt.py", line 199, in _validate_claims	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	self._validate_exp(payload, now, leeway)	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	File "/usr/local/lib/python3.10/site-packages/jwt/api_jwt.py", line 234, in _validate_exp	devlop
+August 17, 2023 at 09:51 (UTC+5:30)	raise ExpiredSignatureError("Signature has expired")
